@@ -1,8 +1,7 @@
-
 import { useState } from "react";
 import { Mail, Send } from "lucide-react";
 
-const email = "jainish.satani@email.com";
+const email = "jainishsatani75@gmail.com";
 const linkedin = "https://www.linkedin.com/in/jainishsatani/";
 
 export default function ContactSection() {
