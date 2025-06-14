@@ -6,6 +6,7 @@ import PortfolioSection from "@/components/sections/PortfolioSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import SkillsSection from "@/components/sections/SkillsSection";
 import ContactSection from "@/components/sections/ContactSection";
+import AIChatBubble from "@/components/AIChatBubble";
 
 const Index = () => {
   return (
@@ -27,6 +28,7 @@ const Index = () => {
           </div>
         </footer>
       </main>
+      <AIChatBubble />
     </div>
   );
 };
