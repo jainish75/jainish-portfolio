@@ -1,3 +1,4 @@
+
 export default function HeroSection() {
   return (
     <section
@@ -26,9 +27,9 @@ export default function HeroSection() {
         <div className="flex-1 flex justify-center mb-8 md:mb-0">
           <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-full shadow-2xl border-[10px] border-gold-light bg-white transition-all hover:scale-105 duration-300">
             <img
-              src="/lovable-uploads/photo-1649972904349-6e44c42644a7"
-              alt="Jainish Satani profile"
-              className="object-cover w-full h-full"
+              src="/lovable-uploads/e8a27064-44c1-42c7-9f85-e17339d14287.png"
+              alt="Jainish Satani profile portrait outdoors"
+              className="object-cover w-full h-full rounded-full"
             />
             <div className="absolute bottom-0 right-0 bg-gold rounded-tl-2xl p-3 px-10 font-bold text-white text-lg shadow-gold">
               Data
