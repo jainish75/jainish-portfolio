@@ -1,5 +1,4 @@
 
-import profile from "/lovable-uploads/photo-1649972904349-6e44c42644a7"; // Placeholder profile
 export default function HeroSection() {
   return (
     <section
