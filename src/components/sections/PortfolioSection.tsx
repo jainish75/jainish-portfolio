@@ -46,22 +46,24 @@ export default function PortfolioSection() {
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {projects.map((proj, idx) => (
-            <div key={proj.title} className="bg-white rounded-xl shadow-card flex flex-col h-full">
-              <div className="h-40 rounded-t-lg overflow-hidden">
-                <img src={proj.image} alt={proj.title} className="w-full h-full object-cover transition-transform hover:scale-105 duration-300" />
+            <div key={proj.title} className="bg-white rounded-2xl shadow-xl shadow-primary/10 flex flex-col h-full hover:scale-105 transition duration-200 group border border-border/70">
+              <div className="h-40 rounded-t-2xl overflow-hidden">
+                <img src={proj.image} alt={proj.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
               </div>
               <div className="p-6 flex-1 flex flex-col">
-                <h3 className="font-heading text-xl font-semibold mb-2">{proj.title}</h3>
+                <h3 className="font-heading text-xl font-semibold mb-2 text-primary-dark">{proj.title}</h3>
                 <p className="text-muted mb-3 text-base">{proj.short}</p>
-                <ul className="mb-3 list-disc pl-6 text-sm text-text">
+                <ul className="mb-3 list-disc pl-6 text-sm text-text space-y-1">
                   {proj.bullets.map(bullet => <li key={bullet}>{bullet}</li>)}
                 </ul>
                 <div className="flex items-center flex-wrap gap-2 mb-3">
                   {proj.tools.map(tool =>
-                    <span key={tool} className="bg-accent-lighter text-accent-dark px-2 py-0.5 rounded text-xs font-semibold">{tool}</span>
+                    <span key={tool} className="bg-accent-lighter text-accent-dark px-2 py-0.5 rounded font-semibold text-xs border border-accent">
+                      {tool}
+                    </span>
                   )}
                 </div>
-                <a href={proj.link} target="_blank" rel="noopener" className="mt-auto inline-flex items-center gap-1 text-primary hover:underline font-medium">
+                <a href={proj.link} target="_blank" rel="noopener" className="mt-auto inline-flex items-center gap-1 text-primary hover:underline font-medium hover-scale">
                   View Case Study
                   <ExternalLink size={16} />
                 </a>

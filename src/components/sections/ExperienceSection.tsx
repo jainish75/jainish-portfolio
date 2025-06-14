@@ -61,15 +61,15 @@ export default function ExperienceSection() {
         </h2>
         <ol className="relative border-l-4 border-accent-dark pl-10 space-y-10">
           {jobs.map((job, idx) => (
-            <li key={job.title + job.date} className="relative pb-6">
-              <span className="absolute left-[-30px] top-2 w-5 h-5 rounded-full bg-gold shadow-gold ring-4 ring-white dark:ring-neutral-dark border-2 border-gold-light"></span>
+            <li key={job.title + job.date} className="relative pb-6 group">
+              <span className="absolute left-[-32px] top-2 w-6 h-6 rounded-full bg-gold shadow-xl shadow-gold ring-4 ring-white dark:ring-neutral-dark border-2 border-gold-light z-10 transition-all group-hover:scale-110"></span>
               <div className="mb-1 flex items-center gap-2">
                 <span className="font-semibold text-lg font-heading">{job.title}</span>
                 <span className="bg-accent-lighter text-accent-dark px-2 py-0.5 rounded text-xs font-semibold">{job.org}</span>
                 {job.where && <span className="text-xs text-muted">({job.where})</span>}
                 <span className="text-xs ml-3 text-muted">{job.date}</span>
               </div>
-              <ul className="ml-2 list-disc text-sm text-text mt-1">
+              <ul className="ml-2 list-disc text-sm text-text mt-1 space-y-0.5">
                 {job.bullets.map(b => (
                   <li key={b}>{b}</li>
                 ))}

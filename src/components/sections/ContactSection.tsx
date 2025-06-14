@@ -24,25 +24,25 @@ export default function ContactSection() {
         <div className="flex flex-col md:flex-row gap-8">
           {/* Contact Form */}
           <form
-            className="flex-1 bg-white p-8 rounded-xl shadow-card flex flex-col gap-5"
+            className="flex-1 bg-white p-8 rounded-2xl shadow-xl border border-border/60 flex flex-col gap-5"
             onSubmit={handleSubmit}
           >
             <input
-              className="px-4 py-3 rounded border border-border focus:border-accent focus:outline-none text-base"
+              className="px-4 py-3 rounded-lg border border-border focus:border-accent focus:outline-none text-base shadow-sm transition-all"
               type="text"
               name="name"
               required
               placeholder="Your Name"
             />
             <input
-              className="px-4 py-3 rounded border border-border focus:border-accent focus:outline-none text-base"
+              className="px-4 py-3 rounded-lg border border-border focus:border-accent focus:outline-none text-base shadow-sm transition-all"
               type="email"
               name="email"
               required
               placeholder="Your Email"
             />
             <textarea
-              className="px-4 py-3 rounded border border-border focus:border-accent focus:outline-none resize-none text-base"
+              className="px-4 py-3 rounded-lg border border-border focus:border-accent focus:outline-none resize-none text-base shadow-sm transition-all"
               name="message"
               rows={4}
               required
@@ -50,7 +50,7 @@ export default function ContactSection() {
             />
             <button
               type="submit"
-              className="flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-primary text-white font-bold hover:bg-accent-dark transition shadow-md disabled:opacity-60"
+              className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-primary text-white font-bold hover:bg-accent-dark transition shadow-lg disabled:opacity-60"
               disabled={sent}
             >
               {sent ? (
@@ -86,7 +86,7 @@ export default function ContactSection() {
                 linkedin.com/in/jainishsatani
               </a>
             </div>
-            <p className="mt-6 max-w-xs text-md text-muted">
+            <p className="mt-6 max-w-xs text-md text-muted text-center md:text-left">
               Available for collaborations, contract and full-time roles. <br />
               Let's talk about your next data project!
             </p>

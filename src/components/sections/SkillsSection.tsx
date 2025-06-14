@@ -38,13 +38,13 @@ export default function SkillsSection() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {skillGroups.map((group) => (
-            <div key={group.label} className="bg-neutral-light rounded-xl shadow-card p-6">
+            <div key={group.label} className="bg-neutral-light rounded-2xl shadow-xl shadow-primary/10 p-7 hover:scale-105 transition-all duration-200 border border-border/60">
               <h3 className="font-semibold mb-4 text-lg text-primary-dark">{group.label}</h3>
               <div className="flex flex-wrap gap-2">
                 {group.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1 bg-gold-light text-gold-dark rounded-full text-sm font-medium border border-gold"
+                    className="px-3 py-1 bg-gold-light text-gold-dark rounded-full text-sm font-medium border border-gold/50 transition-colors duration-150"
                   >
                     {skill}
                   </span>
