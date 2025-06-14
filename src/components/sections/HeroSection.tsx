@@ -28,7 +28,7 @@ export default function HeroSection() {
         <div className="flex-1 flex justify-center mb-8 md:mb-0">
           <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-full shadow-card overflow-hidden border-8 border-gold-light bg-white">
             <img
-              src={profile}
+              src="/lovable-uploads/photo-1649972904349-6e44c42644a7"
               alt="Jainish Satani profile"
               className="object-cover w-full h-full"
             />
